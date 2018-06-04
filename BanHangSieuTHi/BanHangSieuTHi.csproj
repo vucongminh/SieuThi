@@ -110,6 +110,12 @@
     <Compile Include="frmCheckOut.Designer.cs">
       <DependentUpon>frmCheckOut.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmChiTietHoaDonNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietHoaDonNhap.Designer.cs">
+      <DependentUpon>frmChiTietHoaDonNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmChiTietHoaDonXuat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCheckOut.resx">
       <DependentUpon>frmCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChiTietHoaDonNhap.resx">
+      <DependentUpon>frmChiTietHoaDonNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmChiTietHoaDonXuat.resx">
       <DependentUpon>frmChiTietHoaDonXuat.cs</DependentUpon>

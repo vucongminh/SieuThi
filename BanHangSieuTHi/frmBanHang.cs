@@ -22,7 +22,7 @@ namespace BanHangSieuTHi
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QLBanHangSieuThi;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-J9T3NL5;Initial Catalog=QLBanHangSieuThi;Integrated Security=True");
 
         private void frmBanHang_Load(object sender, EventArgs e)
         {
@@ -109,7 +109,18 @@ namespace BanHangSieuTHi
         }
 
         private void btnTaoHD_Click(object sender, EventArgs e)
-        {        
+        {
+            int dem = Convert.ToInt32(truyVanDL.LayDuLieu("Select count(*) from HOADONXUAT").Rows[0][0].ToString().Trim());           
+
+            if (dem >= 0)
+            {
+                txtMaHD.Text = "HD0" + (dem + 1);
+            }
+            else if (dem >= 10)
+            {
+                txtMaHD.Text = "HD" + (dem + 1);
+            }
+
             txbTongTien.Text = "0";
             if (txtMaHD.Text == "") { MessageBox.Show("Bạn chưa nhập mã HĐ"); }
             int dem1 = Convert.ToInt32(truyVanDL.LayDuLieu("Select count(*) from HOADONXUAT where SoHDX = '" + txtMaHD.Text.Trim() + "'").Rows[0][0].ToString().Trim());
@@ -191,6 +202,7 @@ namespace BanHangSieuTHi
 
                 if (con.State == ConnectionState.Open)
                     con.Close();
+                MessageBox.Show("Thanh toán thành công!");
             }
             catch (Exception ex)
             {
@@ -224,7 +236,5 @@ namespace BanHangSieuTHi
                
             }
         }
-
-
     }
 }

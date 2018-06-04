@@ -14,7 +14,7 @@ namespace BanHangSieuTHi.Class
         //public static bool isLoginSuccess;
         //Properties.Settings st = new DataAccessLayer.Properties.Settings();    
         //public static string ConnectionString2 = @"server ='VTF-PC' ;database ='QLCQSVN' ;User ID=sa;password=vtf;Integrated Security = false";//;Integrated Security = false
-        public static string ConnectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=QLBanHangSieuThi;Integrated Security=True";//;Integrated Security = false
+        public static string ConnectionString = @"Data Source=DESKTOP-J9T3NL5;Initial Catalog=QLBanHangSieuThi;Integrated Security=True";//;Integrated Security = false
         public sqlQuery()
         {
             try

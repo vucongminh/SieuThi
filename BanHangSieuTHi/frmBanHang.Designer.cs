@@ -166,6 +166,7 @@
             this.txtMaHD.Location = new System.Drawing.Point(294, 78);
             this.txtMaHD.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaHD.Name = "txtMaHD";
+            this.txtMaHD.ReadOnly = true;
             this.txtMaHD.Size = new System.Drawing.Size(84, 26);
             this.txtMaHD.TabIndex = 11;
             // 
@@ -210,7 +211,7 @@
             this.MaHang,
             this.SoLuong,
             this.DonGia});
-            this.dgvSanPham.Location = new System.Drawing.Point(203, 134);
+            this.dgvSanPham.Location = new System.Drawing.Point(218, 134);
             this.dgvSanPham.Margin = new System.Windows.Forms.Padding(4);
             this.dgvSanPham.Name = "dgvSanPham";
             this.dgvSanPham.ReadOnly = true;
@@ -223,6 +224,7 @@
             this.ID.DataPropertyName = "ID";
             this.ID.HeaderText = "ID";
             this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
             this.ID.Visible = false;
             // 
             // SoHDX
@@ -230,6 +232,7 @@
             this.SoHDX.DataPropertyName = "SoHDX";
             this.SoHDX.HeaderText = "Mã HĐX";
             this.SoHDX.Name = "SoHDX";
+            this.SoHDX.ReadOnly = true;
             this.SoHDX.Visible = false;
             // 
             // MaLoai
@@ -237,24 +240,28 @@
             this.MaLoai.DataPropertyName = "MaLoai";
             this.MaLoai.HeaderText = "Mã Loại";
             this.MaLoai.Name = "MaLoai";
+            this.MaLoai.ReadOnly = true;
             // 
             // MaHang
             // 
             this.MaHang.DataPropertyName = "MaHang";
             this.MaHang.HeaderText = "Mã Hàng";
             this.MaHang.Name = "MaHang";
+            this.MaHang.ReadOnly = true;
             // 
             // SoLuong
             // 
             this.SoLuong.DataPropertyName = "SoLuong";
             this.SoLuong.HeaderText = "Số Lượng";
             this.SoLuong.Name = "SoLuong";
+            this.SoLuong.ReadOnly = true;
             // 
             // DonGia
             // 
             this.DonGia.DataPropertyName = "DonGia";
             this.DonGia.HeaderText = "Đơn Gía";
             this.DonGia.Name = "DonGia";
+            this.DonGia.ReadOnly = true;
             // 
             // txbTongTien
             // 
@@ -412,9 +419,9 @@
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.txbTienKhachDua);
-            this.groupBox2.Location = new System.Drawing.Point(654, 133);
+            this.groupBox2.Location = new System.Drawing.Point(669, 133);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(237, 381);
+            this.groupBox2.Size = new System.Drawing.Size(222, 381);
             this.groupBox2.TabIndex = 29;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thanh toán";

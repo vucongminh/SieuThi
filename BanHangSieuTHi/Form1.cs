@@ -26,8 +26,8 @@ namespace BanHangSieuTHi
         {
 
             flowLayoutPanel1.Controls.Clear();
-            //frmBanHang frm = new frmBanHang();
-            frmBanHang2 frm = new frmBanHang2();
+            frmBanHang frm = new frmBanHang();
+            //frmBanHang2 frm = new frmBanHang2();
             frm.TopLevel = false;
             flowLayoutPanel1.Controls.Add(frm);
             frm.Size = new System.Drawing.Size(901, 533);
